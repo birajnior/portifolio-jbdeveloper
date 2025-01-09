@@ -1,0 +1,47 @@
+:root {
+  --fonte-primaria: "JetBrains Mono", serif;
+  --fonte-secundaria: "Barlow", serif;
+  --azul-padrao: #035d9d;
+  --azul-escuro: #023e6a;
+  --azul-sombra: #012641;
+  --branco: #ffffff;
+  --preto: #000000;
+  --cinza: #8c98a8;
+  --verde: #6caf9e;
+}
+
+.img-logo {
+  width: 135px;
+  height: 42px;
+}
+
+.nav-text {
+  font-family: var(--fonte-primaria);
+  color: var(--azul-padrao);
+  font-size: 20px;
+}
+
+.active {
+  color: var(--verde) !important;
+}
+
+.nav-link:hover {
+  color: var(--verde) !important;
+}
+
+.section-1 {
+  background-image: url(../img/background-section-1.png);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-footer {
+  color: var(--azul-escuro);
+  font-family: var(--fonte-primaria);
+}
