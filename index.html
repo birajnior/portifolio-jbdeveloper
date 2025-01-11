@@ -20,65 +20,103 @@
 </head>
 
 <body>
-    <header class="d-flex justify-content-between align-items-center mx-5 my-3 ">
+    <header class="bg-nav fixed-top">
 
-        <img src="assets/img/logo.png" class="img-logo " alt="Logo JB Developer">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-3 mx-3">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link nav-text active" aria-current="page" href="#">Início</a>
-                        <a class="nav-link nav-text" href="#">Sobre mim</a>
-                        <a class="nav-link nav-text" href="#">Meus Projetos</a>
-                        <a class="nav-link nav-text" href="#">Contato</a>
+                <img src="assets/img/logo.png" class="img-logo " alt="Logo JB Developer">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <img src="assets/img/logo-mobile.png" alt="Logo da cafeteria Serenatto">
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link nav-text active" aria-current="page" href="#">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="#meusProjetos">Meus projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="#contato">Contato</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-text" href="#">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                                        <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                                    </div>
+                                </a>
+                            </li>
                     </div>
                 </div>
+
             </div>
         </nav>
 
     </header>
 
-    <main>
-        <section class="section-1 py-4">
-            <div>
-                <h1>
-                    Eleve seu negócio digital
-                    a outro nível com um
-                    Front-end de qualidade!
-                </h1>
+    <main class="my-5 py-5">
+        <section class="section-1 p-5">
+            <div class="container-1">
+                <div class="container-text">
+                    <h1 class="titulo">
+                        Olá, mundo!
+                    </h1>
+                </div>
+                <div class="mx-2"><img src="./assets/img/Computador.png" class="img-computador"
+                        alt="Computador de mesa com codigos na tela"></div>
             </div>
-            <div><img src="./assets/img/Computador.png" alt="Computador de mesa com codigos na tela"></div>
+
         </section>
 
-        <section class="section-2 my-5 py-3">
+        <section class="section-2 my-5 mx-4 p-3">
             <div style="width: 1200px;">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="./assets/img/avataaars.png" class="avatar-jb" alt="">
+
             </div>
             <div>
-                <p>Minha paixão por tecnologia começou com um curso básico de informática na infância, evoluindo para
+                <p class="paragrafo">Minha paixão por tecnologia começou com um curso básico de informática na infância,
+                    evoluindo para
                     estudos em montagem de computadores, web design e redes.</p>
-                <p>Atualmente, curso Defesa Cibernética na Estácio e desenvolvo habilidades em HTML, CSS e JavaScript,
+                <p class="paragrafo">Atualmente, curso Defesa Cibernética na Estácio e desenvolvo habilidades em HTML,
+                    CSS e JavaScript,
                     com foco em frameworks modernos como Angular. Estou sempre aprimorando minhas competências para
                     criar interfaces responsivas e seguras.</p>
-                <p>Busco aliar criatividade e performance no desenvolvimento de soluções inovadoras, mantendo-me
+                <p class="paragrafo">Busco aliar criatividade e performance no desenvolvimento de soluções inovadoras,
+                    mantendo-me
                     motivado para crescer profissionalmente na área de tecnologia.</p>
             </div>
         </section>
 
         <section class="section-3">
-            <h2 class="container text-center my-3 my-xl-5">Meus Projetos</h2>
+            <h2 class="container text-center my-3 my-xl-5 subtitulo">Meus Projetos</h2>
 
             <div class="container row mx-auto">
                 <div class="col-12 col-md-6 col-xxl-4 pb-4">
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span><img src="./assets/icons/icon-css.svg" alt=""></span>
+                            <span><img src="./assets/icons/icon-html.svg" alt=""></span>
+                            <span><img src="./assets/icons/icon-JavaScript.svg" alt=""></span>
+                            <br>
+                            <br>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
@@ -87,11 +125,10 @@
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span></span>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
@@ -100,11 +137,10 @@
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span></span>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
@@ -113,11 +149,10 @@
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span></span>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
@@ -126,11 +161,10 @@
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span></span>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
@@ -139,20 +173,22 @@
                     <div class="card">
                         <img src="./assets/img/Background Color.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <h5 class="card-title">Nome do projeto</h5>
+                            <p class="card-text">Descrição</p>
+                            <span></span>
+                            <a href="#" class="btn btn-padrao">Link do projeto</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </section>
+
+
     </main>
     <footer class="text-center">
-        <p class="p-3 footer-center text-footer"> 2025 <i class="bi bi-c-circle"></i> Desenvolvido por Ubiratan Júnior &lt;JB /&gt; </p>
+        <p class="p-3 footer-center text-footer"> 2025 <i class="bi bi-c-circle"></i> Desenvolvido por Ubiratan Júnior
+            &lt;JB /&gt; </p>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

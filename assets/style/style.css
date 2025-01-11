@@ -10,6 +10,11 @@
   --verde: #6caf9e;
 }
 
+.bg-nav {
+  background-color: var(--branco);
+  width: 100%;
+}
+
 .img-logo {
   width: 135px;
   height: 42px;
@@ -18,7 +23,8 @@
 .nav-text {
   font-family: var(--fonte-primaria);
   color: var(--azul-padrao);
-  font-size: 20px;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .active {
@@ -31,14 +37,85 @@
 
 .section-1 {
   background-image: url(../img/background-section-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.container-1 {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.container-text {
+  width: 850px;
+  overflow: hidden; /* Garante que o texto fique dentro do container */
+}
+
+.titulo {
+  font-family: var(--fonte-primaria);
+  color: var(--branco);
+  font-size: 2.5rem;
+  margin-left: 50px;
+  margin-top: 80px !important;
+  white-space: nowrap;
+  overflow: hidden; /* Evita quebra de linha */
+  border-right: 2px solid var(--branco); /* Simula o cursor piscante */
+  display: inline-block; /* Importante para o cálculo do tamanho */
+  animation: typing 2s steps(9, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: calc(8ch); /* Define o tamanho exato do texto em caracteres */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+.img-computador {
+  width: 85%;
+}
+
+.avatar-jb{
+ width: 200px;
+}
+
+.paragrafo {
+  font-family: var(--fonte-secundaria);
+  font-weight: 600;
+  font-size: 1rem;
 }
 
 .section-2 {
   display: flex;
   justify-content: space-between;
+}
+
+.subtitulo {
+  font-family: var(--fonte-primaria);
+  color: var(--azul-padrao);
+  font-weight: bold;
+  font-family: 1.5rem;
+}
+
+.btn-padrao {
+  background-color: var(--azul-padrao);
+  color: var(--branco);
+  font-family: var(--fonte-secundaria);
 }
 
 .text-footer {
