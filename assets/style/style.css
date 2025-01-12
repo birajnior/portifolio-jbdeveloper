@@ -58,8 +58,8 @@
 .titulo {
   font-family: var(--fonte-primaria);
   color: var(--branco);
-  font-size: 2.5rem;
-  margin-left: 50px;
+  font-size: 5.5rem;
+  margin-left: 90px;
   margin-top: 80px !important;
   white-space: nowrap;
   overflow: hidden; /* Evita quebra de linha */
@@ -111,6 +111,10 @@
   font-weight: bold;
   font-family: 1.5rem;
 }
+
+#textArea {
+  height: 250px; 
+}   
 
 .btn-padrao {
   background-color: var(--azul-padrao);
