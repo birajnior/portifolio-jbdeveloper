@@ -83,15 +83,12 @@
   }
 }
 
-
-
-
 .img-computador {
   width: 85%;
 }
 
-.avatar-jb{
- width: 200px;
+.avatar-jb {
+  width: 200px;
 }
 
 .paragrafo {
@@ -108,13 +105,26 @@
 .subtitulo {
   font-family: var(--fonte-primaria);
   color: var(--azul-padrao);
-  font-weight: bold;
   font-family: 1.5rem;
 }
 
+.banner {
+  background-image: url(../img/background-contato.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 #textArea {
-  height: 250px; 
-}   
+  height: 200px;
+}
+
+.cor-padrao {
+  color: var(--azul-padrao); 
+}
 
 .btn-padrao {
   background-color: var(--azul-padrao);
@@ -125,4 +135,29 @@
 .text-footer {
   color: var(--azul-escuro);
   font-family: var(--fonte-primaria);
+}
+
+.texto-secundario {
+
+}
+
+.texto-primario {
+
+}
+
+.fonte-primaria {
+
+}
+
+.fonte-segundaria {
+  font-family: var(--fonte-secundaria);
+}
+
+.icon-sociais {
+  text-decoration: none;
+  color: var(--preto);
+}
+
+.box {
+  width: 600px;
 }
