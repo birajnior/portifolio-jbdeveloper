@@ -58,7 +58,7 @@
 .titulo {
   font-family: var(--fonte-primaria);
   color: var(--branco);
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   margin-left: 90px;
   margin-top: 80px !important;
   white-space: nowrap;
