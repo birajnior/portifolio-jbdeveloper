@@ -70,10 +70,10 @@
 
     <main class="my-5">
         <section class="section-1 p-5">
-            <div class="container-1">
+            <div class="container-1 col-10 mx-auto py-5">
                 <div class="container-text">
                     <h1 class="titulo">
-                        Olá, mundo!
+                        Hello World!
                     </h1>
                 </div>
                 <div class="mx-2"><img src="./assets/img/Computador.png" class="img-computador"
@@ -82,7 +82,7 @@
 
         </section>
 
-        <section class="section-2 my-5 mx-4 p-3">
+        <section class="section-2 my-5 mx-4 p-3 col-8 mx-auto">
             <div style="width: 1200px;">
                 <img src="./assets/img/avataaars.png" class="avatar-jb" alt="">
 
@@ -184,71 +184,69 @@
             </div>
         </section>
 
-        <section class="py4 container mt-5 banner border border-2 rounded">
-            <div class="row">
-                <div class="col-10 col-xl-6 mx-auto">
-                    <div class="border border-2 rounded p-3">
-                        <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
-                        <form id="contato">
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
-                                <label for="floatingNome">Nome</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="floatingEmail"
-                                    placeholder="name@example.com">
-                                <label for="floatingEmail">Email</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
-                                <label for="floatingTelefone">Telefone</label>
-                            </div>
-                            <select class="form-select mb-3" aria-label="Default select example">
-                                <option selected>Preferência de contato:</option>
-                                <option value="1">WhatsApp</option>
-                                <option value="2">Email</option>
-                                <option value="3">Ligação</option>
-                            </select>
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="textArea" rows="3"
-                                    placeholder="Descreva um pouco do seu projeto!"></textarea>
-                                <label for="textArea" class="form-label">Descreva um pouco do seu projeto!</label>
-                            </div>
-                            <button type="button" class="btn btn-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+        <section class="banner py-4">
+            <div class="py-4 mt-5 border-2 rounded container">
+                <div class="row mb-4 mt-3">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <div class="border border-2 rounded p-3">
+                            <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
+                            <form id="contato">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                                    <label for="floatingNome">Nome</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="floatingEmail"
+                                        placeholder="name@example.com">
+                                    <label for="floatingEmail">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" class="form-control" id="floatingTelefone"
+                                        placeholder="Telefone">
+                                    <label for="floatingTelefone">Telefone</label>
+                                </div>
+                                <select class="form-select mb-3" aria-label="Default select example">
+                                    <option selected>Preferência de contato:</option>
+                                    <option value="1">WhatsApp</option>
+                                    <option value="2">Email</option>
+                                    <option value="3">Ligação</option>
+                                </select>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="textArea"
+                                        placeholder="Descreva um pouco do seu projeto!"></textarea>
+                                    <label for="textArea" class="form-label">Descreva um pouco do seu projeto!</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100 fw-bold mt-3">Enviar</button>
+                            </form>
+                        </div>
                     </div>
-                    </form>
-                </div>
-                <div class="col-xl-6">
-                    <div class="border border-2 rounded mb-3">
-                        <h2 class="fw-bold p-3 subtitulo">Quer tirar suas ideias do papel etransformá-las em realidade?
-                        </h2>
-                        <h3 class="p-3 box">Eu ajudo você a criar soluções digitais que impulsionam resultados. Vamos
-                            conversar sobre
-                            como
-                            podemos desenvolver algo incrível para o seu negócio!</h3>
-                        <h4 class="px-3 mb-3 fw-bold cor-padrao fonte-secundaria">Contate-me</h4>
-                        <p class="px-3 mb-3 fonte-secundaria"><i class="bi bi-envelope"></i> Email:
-                            ubiratanbernardo@outlook.com</p>
-                        <div class="d-flex gap-2">
-                            <p class="px-3 mb-3 fonte-secundaria cor-padrao fw-bold">Redes Sociais:</p>
-                            <a href="#" target="_blank" rel="noopene noreferrer">
-                                <i class="bi bi-github icon-sociais"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopene noreferrer">
-                                <i class="bi bi-linkedin icon-sociais"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopene noreferrer">
-                                <i class="bi bi-instagram icon-sociais"></i>
-                            </a>
-                            <a href="#" target="_blank" rel="noopene noreferrer">
-                                <i class="bi bi-tiktok icon-sociais"></i>
-                            </a>
+                    <div class="col-12 col-md-6 mx-auto">
+                        <div class="border border-2 rounded p-3">
+                            <h1 class="fw-bold subtitulo p-2">Quer tirar suas ideias do papel e transformá-las em realidade?
+                            </h1>
+                            <p class="texto-solucao fw-bold p-2">Eu ajudo você a criar soluções digitais que impulsionam
+                                resultados.
+                                Vamos conversar sobre
+                                como podemos desenvolver algo incrível para o seu negócio!</p>
+                            <h4 class="fw-bold p-2 box-h4">Contate-me</h4>
+                            <div class="d-flex align-items-center gap-1 p-2">
+                                <i class="bi bi-envelope"></i>
+                                <p class="email mb-0">Email: ubiratanbernardo@outlook.com</p>
+                            </div>
+                            <div class="d-flex gap-3 align-items-center p-2">
+                                <p class="fw-bold sociais mb-0">Redes Sociais:</p>
+                                <a href="#" target="_blank"><i class="bi bi-github icon-sociais"></i></a>
+                                <a href="#" target="_blank"><i class="bi bi-linkedin icon-sociais"></i></a>
+                                <a href="#" target="_blank"><i class="bi bi-instagram icon-sociais"></i></a>
+                                <a href="#" target="_blank"><i class="bi bi-tiktok icon-sociais"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
+
         </section>
+
 
 
     </main>
