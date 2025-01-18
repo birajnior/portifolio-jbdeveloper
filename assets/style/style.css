@@ -31,8 +31,10 @@ body {
   font-weight: 600;
 }
 
-.active {
+.navbar-nav .nav-link.active {
   color: var(--verde) !important;
+  background-color: transparent;
+  font-weight: bold;
 }
 
 .nav-link:hover {
@@ -44,7 +46,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  /* min-height: 90vh; */
 }
 
 .container-1 {
@@ -62,9 +64,7 @@ body {
 .titulo {
   font-family: var(--fonte-primaria);
   color: var(--branco);
-  font-size: 3.5rem;
-  margin-left: 90px;
-  margin-top: 80px !important;
+  font-size: calc(1.8rem + 2vw);
   white-space: nowrap;
   overflow: hidden; /* Evita quebra de linha */
   border-right: 2px solid var(--branco); /* Simula o cursor piscante */
@@ -88,17 +88,19 @@ body {
 }
 
 .img-computador {
-  width: 85%;
+  max-width: 100%;
+  height: auto;
 }
 
 .avatar-jb {
-  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
 .paragrafo {
-  
   font-weight: 600;
-  font-size: 1rem;
+  font-size: calc(1rem + 0.3vw);
+  color: var(--branco);
 }
 
 .section-2 {
@@ -106,10 +108,27 @@ body {
   justify-content: space-between;
 }
 
+.banner-sobre {
+  background-image: url(../img/Polygon\ Luminary.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+}
+
 .subtitulo {
   font-family: var(--fonte-primaria);
   color: var(--azul-padrao);
   font-size: 1.5rem;
+}
+
+.icon-stack {
+  list-style: none;
+}
+
+.img-stacks {
+  width: 50px;
+  height: auto;
 }
 
 .banner {
@@ -135,7 +154,6 @@ body {
 .btn-padrao {
   background-color: var(--azul-padrao);
   color: var(--branco);
-  
 }
 
 .btn-padrao:hover {
