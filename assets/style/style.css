@@ -162,6 +162,15 @@ body {
   transition: background-color 0.3s ease;
 }
 
+.card-img-top {
+  border-bottom: 2px solid #5e5e5e;
+}
+
+.img-tec {
+  width: 30px;
+  height: auto;
+}
+
 .text-footer {
   color: var(--azul-escuro);
   font-family: var(--fonte-primaria);
