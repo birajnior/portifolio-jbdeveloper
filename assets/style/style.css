@@ -238,3 +238,32 @@ body {
     font-size: 2rem; 
   } 
     }*/
+
+input[type="checkbox"] {
+  border: 1px solid var(--azul-sombra);
+  box-shadow: none;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:focus {
+  background-color: var(--azul-padrao);
+  border-color: var(--azul-padrao);
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+}
+
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link,
+  .card-body,
+  .offcanvas,
+  .accordion,
+  .btn {
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-body-color: white;
+    --bs-offcanvas-color: white;
+    --bs-body-color: white;
+  }
+}
