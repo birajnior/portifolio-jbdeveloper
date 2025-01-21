@@ -131,6 +131,10 @@ body {
   height: auto;
 }
 
+.logo-boot {
+  background-color: transparent;
+}
+
 .banner {
   background-image: url(../img/background-contato.png);
   background-position: center;
