@@ -21,15 +21,18 @@
 
 <body>
     <header class="bg-nav fixed-top">
-
         <nav class="navbar navbar-expand-lg py-3 mx-3">
-            <div class="container-fluid d-flex justify-content-center align-items-center">
-                <img src="assets/img/logo.png" class="img-logo " alt="Logo JB Developer">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <!-- Logo à esquerda -->
+                <img src="assets/img/logo.png" class="img-logo" alt="Logo JB Developer">
+
+                <!-- Botão de menu hamburguer à direita -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Offcanvas para o menu -->
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -61,13 +64,14 @@
                                     </div>
                                 </a>
                             </li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
         </nav>
-
     </header>
+
 
     <main class="my-5">
         <section class="section-1 p-5">
@@ -221,35 +225,35 @@
                     </div>
                     <div class="px-4">
                         <h2 class="subtitulo" style="color: white;">Minhas stack</h2>
-                        <ul class="row gx-2 gy-3">
-                            <li class="col-3 text-center icon-stack">
+                        <ul class="row gx-1 gy-2">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-html.svg"
                                     alt="Ícone do HTML">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-css.svg" alt="Ícone do CSS">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-JavaScript.svg"
                                     alt="Ícone do JavaScript">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-react.svg"
                                     alt="Ícone do React">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-bootstrap.svg"
                                     alt="Ícone do Bootstrap">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-sass.svg"
                                     alt="Ícone do Sass">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-figma.svg"
                                     alt="Ícone do Figma">
                             </li>
-                            <li class="col-3 text-center icon-stack">
+                            <li class="col-3 d-flex justify-content-center icon-stack">
                                 <img class="img-fluid img-stacks" src="./assets/icons/icon-vs-code.svg"
                                     alt="Ícone do Visual Studio Code">
                             </li>
@@ -262,9 +266,10 @@
 
         <section class="banner mt-5 py-4">
             <div class="py-4 mt-5 border-2 rounded container">
+                <!-- div com os containers -->
                 <div class="row mb-4 mt-3">
-                    <div class="col-12 col-md-6 mx-auto">
-                        <div class="border border-2 rounded p-3">
+                    <div class="col-12 col-md-6 mx-auto mt-4 py-4">
+                        <div class="border border-2 rounded p-3 mt-2">
                             <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
                             <form id="contato">
                                 <div class="form-floating mb-3">
@@ -296,8 +301,8 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 mx-auto">
-                        <div class="border border-2 rounded p-3">
+                    <div class="col-12 col-md-6 mx-auto mt-4 mb-5 py-4">
+                        <div class="border border-2 rounded p-3 mt-2">
                             <h1 class="fw-bold subtitulo p-2">Quer tirar suas ideias do papel e transformá-las em
                                 realidade?
                             </h1>
@@ -310,7 +315,7 @@
                                 <i class="bi bi-envelope"></i>
                                 <p class="email mb-0">Email: ubiratanbernardo@outlook.com</p>
                             </div>
-                            <div class="d-flex gap-3 align-items-center p-2">
+                            <div class="d-flex gap-3 align-items-center p-2 mb-4">
                                 <p class="fw-bold sociais mb-0">Redes Sociais:</p>
                                 <a href="#" target="_blank"><i class="bi bi-github icon-sociais"></i></a>
                                 <a href="#" target="_blank"><i class="bi bi-linkedin icon-sociais"></i></a>
