@@ -215,25 +215,6 @@ body {
 .box-sociais {
   font-size: 2rem;
 }
-/*
-@media (max-width: 768px) {
-
-  /* .container-text {
-    width: 100%;
-  }
-
-  .img-computador {
-    width: 100%;
-  }
-
-  .box-h3 {
-    font-size: 1.2rem; 
-  }
-
-  .titulo {
-    font-size: 2rem; 
-  } 
-    }*/
 
 input[type="checkbox"] {
   border: 1px solid var(--azul-sombra);
@@ -261,5 +242,38 @@ input[type="checkbox"]:focus {
     --bs-body-color: white;
     --bs-offcanvas-color: white;
     --bs-body-color: white;
+  }
+}
+
+/* Imagem com contorno animado */
+.animated-border {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem */
+  border-radius: 50%; /* Faz a imagem ser circular */
+  width: 400px; /* Aumentei o tamanho da imagem */
+  height: 400px;
+  object-fit: cover; /* Garante que a imagem fique bem ajustada dentro do espaço */
+  position: relative;
+  z-index: 1;
+
+  /* Filtro de contorno com animação */
+  filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
+    drop-shadow(0 0 8px #00c6ff);
+  animation: border-pulse 2s infinite;
+}
+
+/* Animação do contorno pulsante */
+@keyframes border-pulse {
+  0% {
+    filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
+      drop-shadow(0 0 8px #00c6ff);
+  }
+  50% {
+    filter: drop-shadow(0 0 5px #035d9d) drop-shadow(0 0 8px #00c6ff)
+      drop-shadow(0 0 10px #035d9d);
+  }
+  100% {
+    filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
+      drop-shadow(0 0 8px #00c6ff);
   }
 }
