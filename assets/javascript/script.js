@@ -15,3 +15,37 @@ document
       input.blur();
     });
   });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-item .nav-link"); // Seleciona todos os links dentro dos itens do nav
+
+  // Função para remover a classe 'active' de todos os itens
+  const removeActiveClass = () => {
+    navLinks.forEach((link) => link.classList.remove("active"));
+  };
+
+  // Adiciona um evento de clique a cada link do nav
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href"); // Obtém o valor do href (ex: #contato)
+
+      // Verifica se o link é uma âncora (começa com #)
+      if (targetId && targetId.startsWith("#")) {
+        removeActiveClass(); // Remove a classe 'active' de todos os links
+        link.classList.add("active"); // Adiciona a classe 'active' ao link clicado
+
+        // Adiciona a classe 'active' ao item pai (<li>) do link clicado
+        const parentItem = link.closest(".nav-item");
+        if (parentItem) {
+          parentItem.classList.add("active");
+        }
+
+        // Rola a página até a seção correspondente
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    });
+  });
+});

@@ -4,7 +4,7 @@
   --azul-padrao: #035d9d;
   --azul-escuro: #023e6a;
   --azul-sombra: #012641;
-  --branco: #ffffff;
+  --branco: #fffafa;
   --preto: #000000;
   --cinza: #8c98a8;
   --verde: #6caf9e;
@@ -149,10 +149,6 @@ body {
 #textArea {
   min-height: 130px;
   resize: vertical;
-}
-
-.cor-padrao {
-  color: var(--azul-padrao);
 }
 
 .btn-padrao {
