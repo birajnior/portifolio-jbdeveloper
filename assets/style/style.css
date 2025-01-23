@@ -101,6 +101,7 @@ body {
   font-weight: 600;
   font-size: calc(1rem + 0.3vw);
   color: var(--branco);
+  text-align: justify;
 }
 
 .section-2 {
@@ -250,8 +251,8 @@ input[type="checkbox"]:focus {
   display: block;
   margin: 0 auto; /* Centraliza a imagem */
   border-radius: 50%; /* Faz a imagem ser circular */
-  width: 400px; /* Aumentei o tamanho da imagem */
-  height: 400px;
+  width: 450px; /* Aumentei o tamanho da imagem */
+  height: 450px;
   object-fit: cover; /* Garante que a imagem fique bem ajustada dentro do espaço */
   position: relative;
   z-index: 1;
@@ -265,15 +266,19 @@ input[type="checkbox"]:focus {
 /* Animação do contorno pulsante */
 @keyframes border-pulse {
   0% {
-    filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
-      drop-shadow(0 0 8px #00c6ff);
+    filter: drop-shadow(0 0 4px #00c6ff) drop-shadow(0 0 7px #035d9d)
+      drop-shadow(0 0 10px #00c6ff);
   }
   50% {
-    filter: drop-shadow(0 0 5px #035d9d) drop-shadow(0 0 8px #00c6ff)
-      drop-shadow(0 0 10px #035d9d);
+    filter: drop-shadow(0 0 7px #035d9d) drop-shadow(0 0 10px #00c6ff)
+      drop-shadow(0 0 12px #035d9d);
   }
   100% {
-    filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
-      drop-shadow(0 0 8px #00c6ff);
+    filter: drop-shadow(0 0 4px #00c6ff) drop-shadow(0 0 7px #035d9d)
+      drop-shadow(0 0 10px #00c6ff);
   }
+}
+
+.sombra{
+  --bs-bg-opacity: 0.1;
 }
