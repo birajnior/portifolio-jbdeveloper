@@ -201,24 +201,21 @@ body {
   height: auto;
 }
 
-.box-h4 {
-  font-size: 1.875rem;
+.box-h3 {
+  font-size: 1.5rem;
   color: var(--azul-padrao);
 }
 
 .email {
   font-family: var(--fonte-primaria);
-  font-size: 1.121rem;
+  font-size: 1rem;
+  margin: 0 !important;
 }
 
 .texto-solucao {
   max-width: 100%;
   font-size: 1.5rem;
   text-align: justify;
-}
-
-.box-sociais {
-  font-size: 2rem;
 }
 
 input[type="checkbox"] {
@@ -250,17 +247,20 @@ input[type="checkbox"]:focus {
   --bs-offcanvas-color: white;
 }
 
+[data-bs-theme="dark"] .icon-sociais {
+  color: var(--branco);
+}
 /* ANIMAÇÕES */
 .animated-border {
-  display: block; 
-  max-width: 100%; 
-  height: auto; 
+  display: block;
+  max-width: 100%;
+  height: auto;
   border-radius: 50%;
-  object-fit: cover; 
+  object-fit: cover;
   filter: drop-shadow(0 0 2px #00c6ff) drop-shadow(0 0 5px #035d9d)
-    drop-shadow(0 0 8px #00c6ff); 
-  animation: border-pulse 2s infinite; 
-  overflow: hidden; 
+    drop-shadow(0 0 8px #00c6ff);
+  animation: border-pulse 2s infinite;
+  overflow: hidden;
 }
 
 @keyframes border-pulse {
@@ -280,4 +280,14 @@ input[type="checkbox"]:focus {
 
 .sombra {
   --bs-bg-opacity: 0.1;
+}
+
+@media (max-width: 480px) {
+  .sociais,
+  .icon-sociais {
+    font-size: 1.1rem;
+  }
+  .texto-solucao {
+    font-size: 1.2rem;
+  }
 }

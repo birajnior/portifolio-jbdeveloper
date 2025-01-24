@@ -29,7 +29,7 @@
 
                 <!-- Botão de menu hamburguer à direita -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Abrir menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -38,9 +38,10 @@
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                            <img src="assets/img/logo-mobile.png" alt="Logo da cafeteria Serenatto">
+                            <img src="assets/img/logo-mobile.png" alt="Logo JB Developer">
                         </h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Fechar"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -72,15 +73,12 @@
         </nav>
     </header>
 
-
     <main class="my-5">
         <section class="section-1 p-5">
             <div class="container py-5">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-6 align-self-start mt-5 text-center text-md-start mb-4 mb-md-0">
-                        <h1 class="titulo">
-                            Hello World!
-                        </h1>
+                    <div class="col-12 col-md-6 text-center text-md-start">
+                        <h1 class="titulo">Hello World!</h1>
                     </div>
                     <div class="col-12 col-md-6 text-center">
                         <img src="./assets/img/Computador.png" class="img-computador img-fluid"
@@ -90,9 +88,8 @@
             </div>
         </section>
 
-        <section id="meusProjetos" class="section-3">
-            <h2 class="container fw-bold text-center my-3 my-xl-5 subtitulo">Meus Projetos</h2>
-
+        <section id="meusProjetos" class="section-3 py-5">
+            <h2 class="fw-bold text-center mb-5 subtitulo">Meus Projetos</h2>
             <div class="container row mx-auto">
                 <div class="col-12 col-md-6 col-xxl-4 pb-4">
                     <div class="card">
@@ -211,10 +208,10 @@
             </div>
         </section>
 
-        <section id="sobre" class="banner-sobre my-5">
-            <div class="sombra bg-body-secondary">
-                <div class="section-2 container mx-auto py-5 gap-5 d-flex flex-column flex-md-row ">
-                    <div class="p-4 mx-auto col-12 col-md-6">
+        <section id="sobre" class="banner-sobre my-5 bg-body-secondary">
+            <div class="sombra">
+                <div class="section-2 container mx-auto py-5 gap-4 d-flex flex-column flex-md-row ">
+                    <div class="p-4  col-12 col-md-6 text-center">
                         <img loading="lazy" src="./assets/img/photo-profile (1).webp" class="animated-border"
                             alt="Minha Foto">
                     </div>
@@ -236,37 +233,37 @@
                             </p>
                         </div>
                         <div class="px-4">
-                            <h2 class="subtitulo" style="color: white;">Minha stack</h2>
-                            <ul class="row gx-1 gy-2">
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                            <h3 class="subtitulo" style="color: white;">Minha stack</h3>
+                            <ul class="list-inline">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-html.svg"
                                         alt="Ícone do HTML">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-css.svg"
                                         alt="Ícone do CSS">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-JavaScript.svg"
                                         alt="Ícone do JavaScript">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-react.svg"
                                         alt="Ícone do React">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-bootstrap.svg"
                                         alt="Ícone do Bootstrap">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-sass.svg"
                                         alt="Ícone do Sass">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-figma.svg"
                                         alt="Ícone do Figma">
                                 </li>
-                                <li class="col-3 d-flex justify-content-center icon-stack">
+                                <li class="list-inline-item mb-3">
                                     <img class="img-fluid img-stacks" src="./assets/icons/icon-vs-code.svg"
                                         alt="Ícone do Visual Studio Code">
                                 </li>
@@ -277,63 +274,69 @@
             </div>
         </section>
 
-        <section class="banner mt-5 py-4">
-            <div class="py-4 mt-5 border-2 rounded container">
+        <section id="contato" class="banner py-5">
+            <div class="container mt-5 mb-5">
                 <!-- div com os containers -->
-                <div class="row mb-4 mt-3">
-                    <div class="col-12 col-md-6 mx-auto mt-4 py-4">
-                        <div class="border border-2 rounded p-3 mt-2">
-                            <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
-                            <form id="contato">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
-                                    <label for="floatingNome">Nome</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingEmail"
-                                        placeholder="name@example.com">
-                                    <label for="floatingEmail">Email</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="number" class="form-control" id="floatingTelefone"
-                                        placeholder="Telefone">
-                                    <label for="floatingTelefone">Telefone</label>
-                                </div>
-                                <select class="form-select mb-3" aria-label="Default select example">
-                                    <option selected>Preferência de contato:</option>
-                                    <option value="1">WhatsApp</option>
-                                    <option value="2">Email</option>
-                                    <option value="3">Ligação</option>
-                                </select>
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="textArea"
-                                        placeholder="Descreva um pouco do seu projeto!"></textarea>
-                                    <label for="textArea" class="form-label">Descreva um pouco do seu projeto!</label>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100 fw-bold mt-3">Enviar</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 mx-auto mt-4 mb-5 py-4">
-                        <div class="border border-2 rounded p-3 mt-2">
-                            <h1 class="fw-bold subtitulo p-2">Quer tirar suas ideias do papel e transformá-las em
-                                realidade?
-                            </h1>
-                            <p class="texto-solucao fw-bold p-2">Eu ajudo você a criar soluções digitais que impulsionam
-                                resultados.
-                                Vamos conversar sobre
-                                como podemos desenvolver algo incrível para o seu negócio!</p>
-                            <h4 class="fw-bold p-2 box-h4">Contate-me</h4>
-                            <div class="d-flex align-items-center gap-1 p-2">
-                                <i class="bi bi-envelope"></i>
-                                <p class="email mb-0">Email: ubiratanbernardo@outlook.com</p>
+                <div class="container mt-5 mb-5">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mx-auto py-2">
+                            <div class="border border-2 rounded p-3 mt-2">
+                                <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
+                                <form>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                                        <label for="floatingNome">Nome</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="floatingEmail"
+                                            placeholder="name@example.com">
+                                        <label for="floatingEmail">Email</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="floatingTelefone"
+                                            placeholder="Telefone">
+                                        <label for="floatingTelefone">Telefone</label>
+                                    </div>
+                                    <select class="form-select mb-3" aria-label="Default select example">
+                                        <option selected>Preferência de contato:</option>
+                                        <option value="1">WhatsApp</option>
+                                        <option value="2">Email</option>
+                                        <option value="3">Ligação</option>
+                                    </select>
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" id="textArea"
+                                            placeholder="Descreva um pouco do seu projeto!"></textarea>
+                                        <label for="textArea" class="form-label">Descreva um pouco do seu
+                                            projeto!</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 fw-bold mt-3">Enviar</button>
+                                </form>
                             </div>
-                            <div class="d-flex gap-3 align-items-center p-2 mb-4">
-                                <p class="fw-bold sociais mb-0">Redes Sociais:</p>
-                                <a href="#" target="_blank"><i class="bi bi-github icon-sociais"></i></a>
-                                <a href="#" target="_blank"><i class="bi bi-linkedin icon-sociais"></i></a>
-                                <a href="#" target="_blank"><i class="bi bi-instagram icon-sociais"></i></a>
-                                <a href="#" target="_blank"><i class="bi bi-tiktok icon-sociais"></i></a>
+                        </div>
+                        <div class="col-12 col-md-6 mx-auto py-2">
+                            <div class="border border-2 rounded p-3 mt-2">
+                                <h1 class="fw-bold subtitulo p-2">Quer tirar suas ideias do papel e transformá-las em
+                                    realidade?
+                                </h1>
+                                <p class="texto-solucao fw-bold p-2">Eu ajudo você a criar soluções digitais que
+                                    impulsionam
+                                    resultados.
+                                    Vamos conversar sobre
+                                    como podemos desenvolver algo incrível para o seu negócio!</p>
+                                <div class="col-12 col-md-6">
+                                    <div class="info-contato p-2">
+                                        <h3 class="fw-bold box-h3">Vamos trabalhar juntos!</h3>
+                                        <p class="email"><i class="bi bi-envelope"></i> Email:</p>
+                                        <p class="email mt-0">ubiratanbernardo@outlook.com</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-3 align-items-center p-2 mb-4">
+                                    <p class="fw-bold sociais mb-0">Redes Sociais:</p>
+                                    <a href="#" target="_blank"><i class="bi bi-github icon-sociais"></i></a>
+                                    <a href="#" target="_blank"><i class="bi bi-linkedin icon-sociais"></i></a>
+                                    <a href="#" target="_blank"><i class="bi bi-instagram icon-sociais"></i></a>
+                                    <a href="#" target="_blank"><i class="bi bi-tiktok icon-sociais"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -341,12 +344,9 @@
             </div>
 
         </section>
-
-
-
     </main>
     <footer class="text-center">
-        <p class="p-3 footer-center text-footer"> 2025 <i class="bi bi-c-circle"></i> Desenvolvido por Ubiratan Júnior
+        <p class="footer-center text-footer"> 2025 <i class="bi bi-c-circle"></i> Desenvolvido por Ubiratan Júnior
             &lt;JB /&gt; </p>
     </footer>
 </body>
