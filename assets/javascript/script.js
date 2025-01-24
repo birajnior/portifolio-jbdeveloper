@@ -1,3 +1,33 @@
+import {
+  validacaoNome,
+  validacaoEmail,
+  validacaoTelefone,
+  validacaoMensagem,
+  validacaoSelect,
+  formatarTelefone,
+  validarFormulario,
+} from "./validacao-form.js";
+document.addEventListener("DOMContentLoaded", () => {
+  // Chama as validações específicas ao sair do campo
+  document
+    .querySelector("#floatingNome")
+    .addEventListener("blur", validacaoNome);
+  document
+    .querySelector("#floatingEmail")
+    .addEventListener("blur", validacaoEmail);
+  document
+    .querySelector("#floatingTelefone")
+    .addEventListener("blur", validacaoTelefone);
+  document
+    .querySelector("#textArea")
+    .addEventListener("blur", validacaoMensagem);
+
+  // Inicializa a formatação do telefone
+  formatarTelefone();
+
+  // Validação geral no envio do formulário
+  validarFormulario();
+});
 const inputCheck = document.querySelector("#modoNoturno");
 const elemento = document.querySelector("body");
 
