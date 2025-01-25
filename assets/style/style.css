@@ -247,6 +247,10 @@ input[type="checkbox"]:focus {
   --bs-offcanvas-color: white;
 }
 
+.ofCanvasCustom {
+  width: 65% !important;
+}
+
 [data-bs-theme="dark"] .icon-sociais {
   color: var(--branco);
 }
