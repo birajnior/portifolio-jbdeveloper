@@ -284,28 +284,29 @@
                                 <h3 class="fw-bold p-3 subtitulo">Entre em contato!</h3>
                                 <form id="contact-form">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="floatingNome" placeholder="Nome"
-                                            required>
+                                        <input type="text" class="form-control" id="floatingNome" name="user__name"
+                                            placeholder="Nome" required>
                                         <label for="floatingNome">Nome</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" id="floatingEmail"
+                                        <input type="email" class="form-control" id="floatingEmail" name="user__email"
                                             placeholder="name@example.com" required>
                                         <label for="floatingEmail">Email</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <input type="tel" class="form-control" id="floatingTelefone"
+                                        <input type="tel" class="form-control" id="floatingTelefone" name="user__phone"
                                             placeholder="Telefone" required>
                                         <label for="floatingTelefone">Telefone</label>
                                     </div>
-                                    <select class="form-select mb-3" aria-label="Default select example" required>
+                                    <select class="form-select mb-3" name="contact_preference"
+                                        aria-label="Default select example" required>
                                         <option value="" selected disabled>Preferência de contato:</option>
                                         <option value="1">WhatsApp</option>
                                         <option value="2">Email</option>
                                         <option value="3">Ligação</option>
                                     </select>
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" id="textArea"
+                                        <textarea class="form-control" id="textArea" name="project__description"
                                             placeholder="Descreva um pouco do seu projeto!" required></textarea>
                                         <label for="textArea" class="form-label">Descreva um pouco do seu
                                             projeto!</label>
@@ -335,12 +336,12 @@
                                     <p class="fw-bold sociais mb-0">Redes Sociais:</p>
                                     <a href="https://github.com/birajnior" target="_blank" rel="noopener noreferrer"><i
                                             class="bi bi-github icon-sociais"></i></a>
-                                    <a href="https://www.linkedin.com/in/ubiratanbernardo/" target="_blank" rel="noopener noreferrer"><i
-                                            class="bi bi-linkedin icon-sociais"></i></a>
-                                    <a href="https://www.instagram.com/birajnior" target="_blank" rel="noopener noreferrer"><i
-                                            class="bi bi-instagram icon-sociais"></i></a>
-                                    <a href="https://www.tiktok.com/@birajnior" target="_blank" rel="noopener noreferrer"><i
-                                            class="bi bi-tiktok icon-sociais"></i></a>
+                                    <a href="https://www.linkedin.com/in/ubiratanbernardo/" target="_blank"
+                                        rel="noopener noreferrer"><i class="bi bi-linkedin icon-sociais"></i></a>
+                                    <a href="https://www.instagram.com/birajnior" target="_blank"
+                                        rel="noopener noreferrer"><i class="bi bi-instagram icon-sociais"></i></a>
+                                    <a href="https://www.tiktok.com/@birajnior" target="_blank"
+                                        rel="noopener noreferrer"><i class="bi bi-tiktok icon-sociais"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -359,5 +360,6 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 <script type="module" src="./assets/javascript/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 </html>

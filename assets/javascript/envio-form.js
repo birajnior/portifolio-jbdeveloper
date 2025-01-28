@@ -1,24 +1,28 @@
-document
-  .querySelector("#contact-form")
-  .addEventListener("submit", async (e) => {
-    e.preventDefault();
+emailjs.init("thyVc0i-BBT0D-l2g");
 
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries());
+const form = document.querySelector("#contact-form");
 
-    try {
-      const response = await fetch("https://sua-api.com/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
 
-      if (response.ok) {
-        alert("Mensagem enviada com sucesso!");
-      } else {
-        alert("Falha ao enviar a mensagem. Tente novamente.");
-      }
-    } catch (error) {
-      alert("Ocorreu um erro. Por favro, tente novamente.");
+  const submitButton = form.querySelector("button[type='submit']");
+  submitButton.textContent = "Enviando...";
+  submitButton.desabled = true;
+
+  emailjs.sendForm("service_oed6lhv", "template_zyacw2k", form).then(
+    function () {
+      alert("Formulario enviado com sucesso!");
+      form.reset();
+      submitButton.textContent = "Enviar";
+      submitButton.desabled = false;
+    },
+    function (error) {
+      console.error("Erro ao enviar o formulário:", error);
+      alert(
+        "Houve um erro ao enviar o formulário. Tente novamente mais tarde."
+      );
+      submitButton.textContent = "Enviar";
+      submitButton.disabled = false;
     }
-  });
+  );
+});
