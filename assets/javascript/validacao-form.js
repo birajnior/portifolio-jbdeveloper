@@ -124,10 +124,10 @@ export function validarFormulario() {
 
     // Verifica se todas as validações foram bem-sucedidas
     if (nomeValido && emailValido && telefoneValido && mensagemValida) {
-      alert("Formulário enviado com sucesso!");
+      console.log("Formulário enviado com sucesso!");
       form.reset(); // Reseta os campos do formulário
     } else {
-      alert("Por favor, corrija os erros antes de enviar.");
+      console.log("Por favor, corrija os erros antes de enviar.");
     }
   });
 }

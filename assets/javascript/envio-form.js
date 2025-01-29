@@ -1,5 +1,3 @@
-emailjs.init("thyVc0i-BBT0D-l2g");
-
 const form = document.querySelector("#contact-form");
 
 form.addEventListener("submit", function (event) {
@@ -7,20 +5,30 @@ form.addEventListener("submit", function (event) {
 
   const submitButton = form.querySelector("button[type='submit']");
   submitButton.textContent = "Enviando...";
-  submitButton.desabled = true;
+  submitButton.disabled = true;
 
   emailjs.sendForm("service_oed6lhv", "template_zyacw2k", form).then(
     function () {
-      alert("Formulario enviado com sucesso!");
+      // Reseta o formulário
       form.reset();
       submitButton.textContent = "Enviar";
-      submitButton.desabled = false;
+      submitButton.disabled = false;
+
+      // Exibe o modal de sucesso
+      const successModal = new bootstrap.Modal(
+        document.getElementById("successModal")
+      );
+      successModal.show();
     },
     function (error) {
       console.error("Erro ao enviar o formulário:", error);
-      alert(
-        "Houve um erro ao enviar o formulário. Tente novamente mais tarde."
+
+      // Exibe o modal de erro
+      const errorModal = new bootstrap.Modal(
+        document.getElementById("errorModal")
       );
+      errorModal.show();
+
       submitButton.textContent = "Enviar";
       submitButton.disabled = false;
     }
