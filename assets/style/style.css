@@ -10,6 +10,11 @@
   --verde: #6caf9e;
 }
 
+html {
+  scroll-padding-top: 80px;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--fonte-secundaria);
 }

@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: var(--azul-sombra);
+  border-radius: 10px;
+}
+
+/* Parte deslizante (o thumb) */
+::-webkit-scrollbar-thumb {
+  background: var(--azul-padrao);
+  border-radius: 10px;
+  border: 2px solid var(--azul-escuro);
+}
+
+/* Efeito hover no thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--azul-escuro);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--azul-padrao) var(--azul-sombra);
+}
