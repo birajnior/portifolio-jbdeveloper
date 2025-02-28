@@ -25,3 +25,14 @@
   scrollbar-width: thin;
   scrollbar-color: var(--azul-padrao) var(--azul-sombra);
 }
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}

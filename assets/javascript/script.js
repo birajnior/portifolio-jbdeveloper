@@ -79,3 +79,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".animate-on-scroll");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        } else {
+          entry.target.classList.remove("show"); // Remove a classe quando o card sai da tela
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+});
